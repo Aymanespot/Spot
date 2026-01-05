@@ -1,151 +1,245 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPOT - Direct Access to China for Car Accessories</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPOT — China Access & Assistance</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="style.css" />
 
-<style>
-  :root{
-    --bg:#0b0f17;
-    --card:#0f172a;
-    --text:#e5e7eb;
-    --muted:#9ca3af;
-    --line:rgba(255,255,255,.08);
-    --accent:#22c55e;
-    --accent2:#38bdf8;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    background:linear-gradient(180deg,#0b0f17,#070a10);
-    color:var(--text);
-    font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    line-height:1.6;
-  }
-  .ar{font-family:Tajawal, Arial, sans-serif}
-  a{color:inherit}
-  .container{max-width:1100px;margin:0 auto;padding:28px 18px}
-  .nav{
-    display:flex;justify-content:space-between;align-items:center;
-    padding:14px 0;border-bottom:1px solid var(--line);
-    position:sticky;top:0;background:rgba(11,15,23,.85);backdrop-filter:blur(10px);
-  }
-  .brand{font-weight:800;letter-spacing:.5px}
-  .menu{display:flex;gap:14px;flex-wrap:wrap}
-  .menu a{opacity:.85;text-decoration:none;font-size:14px}
-  .menu a:hover{opacity:1}
-  .hero{
-    display:grid;grid-template-columns:1.2fr .8fr;gap:22px;
-    padding:44px 0;
-  }
-  .card{
-    background:rgba(15,23,42,.7);
-    border:1px solid var(--line);
-    border-radius:16px;
-    padding:18px;
-  }
-  h1{margin:0 0 10px;font-size:40px;line-height:1.15}
-  .sub{color:var(--muted);margin:0 0 16px}
-  .btn{
-    display:inline-flex;align-items:center;gap:10px;
-    padding:12px 16px;border-radius:12px;
-    background:linear-gradient(90deg,var(--accent),var(--accent2));
-    color:#071018;font-weight:700;text-decoration:none;
-  }
-  .grid{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px;
-  }
-  .item h3{margin:0 0 6px;font-size:16px}
-  .item p{margin:0;color:var(--muted);font-size:14px}
-  .rtl{direction:rtl;text-align:right}
-  ul{margin:10px 0 0;padding:0 18px}
-  section{padding:18px 0}
-  .footer{border-top:1px solid var(--line);margin-top:28px;padding-top:18px;color:var(--muted);font-size:13px}
-  @media (max-width:900px){
-    .hero{grid-template-columns:1fr}
-    h1{font-size:32px}
-    .grid{grid-template-columns:1fr}
-  }
-</style>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Icons (optional) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body><div class="container">
 
-  <div class="nav">
-    <div class="brand">SPOT</div>
-    <div class="menu ar">
-      <a href="#how">كيفاش خدام؟</a>
-      <a href="#offers">العروض</a>
-      <a href="#rules">القواعد</a>
-      <a href="#faq">الأسئلة</a>
-      <a href="#contact">التواصل</a>
+<body>
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    href="https://wa.me/212660999851?text=Salam%20SPOT%2C%20bghit%20n3ref%20kifach%20khadem%20had%20service%20w%20ash%20kayn%20f%20packs"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <h1>SPOT</h1>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#how-it-works">كيف يعمل</a></li>
+        <li><a href="#packages">الباقات</a></li>
+        <li><a href="#rules">القواعد</a></li>
+        <li><a href="#faq">الأسئلة</a></li>
+        <li><a href="#contact">التواصل</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
 
-  <div class="hero">
-    <div>
-      <h1>SPOT — China Access & Assistance</h1>
+  <!-- HERO (Showit-style) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
 
-      <p class="sub ar rtl">
-        كنربطو التجار مباشرة مع Suppliers و Factories فـ China بطريقة منظمة وبـ assistance حقيقية.
-      </p>
+      <!-- Left: main headline + CTA -->
+      <div>
+        <h1>SPOT — China Access & Assistance</h1>
 
-      <p class="sub">
-        Verified China supplier access & assistance.<br>
-        Access, not products. Assistance, not promises.
-      </p>
+        <p>
+          كنربطو التجار المغاربة مباشرة مع <b>Suppliers</b> و <b>Factories</b> فـ <b>China</b><br>
+          بطريقة منظمة — بلا Agents — وبـ assistance حقيقية.
+        </p>
 
-      <a class="btn" href="https://wa.me/2126XXXXXXX" target="_blank">
-        Contact on WhatsApp
-      </a>
+        <p class="english">
+          Verified China supplier access & assistance.<br>
+          Access, not products. Assistance, not promises.
+        </p>
 
-      <div class="grid">
-        <div class="card item">
-          <h3>Verified Access</h3>
-          <p class="ar rtl">Access مباشر لـ suppliers مختبرين حسب المجال.</p>
-        </div>
+        <a
+          href="https://wa.me/212660999851?text=Salam%20SPOT%2C%20bghit%20n3ref%20kifach%20khadem%20had%20service%20w%20ash%20kayn%20f%20packs"
+          class="btn-whatsapp"
+          target="_blank"
+        >
+          📲 Contact us on WhatsApp
+        </a>
+      </div>
 
-        <div class="card item">
-          <h3>Assistance</h3>
-          <p class="ar rtl">مساعدة فالتواصل + نصائح الجودة و MOQ.</p>
-        </div>
+      <!-- Right: focus card -->
+      <div class="problems">
+        <h2>التركيز الحالي</h2>
+        <p>
+          أول عرض: <b>Car Interior & Exterior Accessories</b><br>
+          (قريباً مجالات أخرى)
+        </p>
 
-        <div class="card item">
-          <h3>Controlled System</h3>
-          <p class="ar rtl">ما كايناش لائحة عمومية	pc — كلشي منظّم.</p>
-        </div>
+        <ul>
+          <li>Access مباشر لـ suppliers مختبرين</li>
+          <li>Supplier profiles منظّمين وواضحين</li>
+          <li>نصائح الجودة و MOQ</li>
+          <li>Assistance فالتواصل</li>
+        </ul>
+
+        <p class="english">
+          You deal directly with suppliers.<br>
+          SPOT assists — does not replace factories.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY / PROBLEMS -->
+  <section class="why-spot">
+    <h2>بزاف ديال التجار كيضيعو الفلوس فـ:</h2>
+    <ul>
+      <li>Agents بثمن غالي</li>
+      <li>جودة ضعيفة</li>
+      <li>Suppliers مزورين</li>
+      <li>سوء التواصل مع China</li>
+    </ul>
+    <p><b>SPOT كيعطيك الحل.</b></p>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <h2>كيفاش خدام SPOT؟</h2>
+    <p>
+      SPOT ماشي agent وماشي شركة شحن.<br>
+      SPOT هو نظام <b>access + assistance</b>.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Step 1: اختيار Pack حسب النشاط ديالك</h3>
+        <p>كتحدد المجال والكمية والميزانية، وكتختار الباقة المناسبة.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2: توصلك Supplier Profiles (مشروحين)</h3>
+        <p>كتستافد من ملفات واضحة باش تختار supplier مناسب.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3: تواصل مباشر مع المصنع</h3>
+        <p>كتتواصل مباشرة مع China بدون وسطاء.</p>
+      </div>
+      <div class="step">
+        <h3>Step 4: Assistance إلا وقع شي مشكل</h3>
+        <p>SPOT كيبقى معاك فالمسار وكيعاونك فالتواصل.</p>
       </div>
     </div>
 
-    <div class="card ar rtl">
-      <h2>التركيز الحالي</h2>
+    <p class="english">
+      Client deals directly with suppliers.<br>
+      SPOT assists, does not replace factories.
+    </p>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages">
+    <h2>الباقات</h2>
+
+    <div class="package core">
+      <h3>🟢 CORE ACCESS</h3>
       <p>
-        أول عرض: <b>Car Interior & Exterior Accessories</b><br>
-        (قريباً مجالات أخرى)
-      </p>
-      <p>
-        ⚠️ SPOT ماشي شركة شحن وماشي agent. كنبيعو access و assistance فقط.
+        شرح سوق China<br>
+        أخطاء شائعة<br>
+        5 Suppliers مختبرين<br>
+        Interior أو Exterior
       </p>
     </div>
-  </div>
 
-<section id="how" class="card ar rtl">
-  <h2>كيفاش خدام؟ (4 خطوات)</h2>
-  <ul>
-    <li>كتختار العرض المناسب</li>
-    <li>كتستافد من Supplier Profiles منظّمين</li>
-    <li>كتتواصل مباشرة مع China</li>
-    <li>SPOT كيبقى معاك فالمسار</li>
-  </ul>
-</section>
+    <div class="package pro">
+      <h3>🔵 PRO ACCESS</h3>
+      <p>
+        15–20 Suppliers<br>
+        Interior + Exterior<br>
+        MOQ + Price ranges<br>
+        Quality explanation<br>
+        Shipping advice
+      </p>
+    </div>
+
+    <div class="package premium">
+      <h3>🔴 PREMIUM ASSIST</h3>
+      <p>
+        تواصل مباشر بالنيابة<br>
+        Sample advice<br>
+        Custom requests<br>
+        Priority support
+      </p>
+    </div>
+
+    <p class="note">Prices depend on package & availability.</p>
+
+    <a
+      href="https://wa.me/212660999851?text=Salam%20SPOT%2C%20bghit%20n3ref%20ash%20kayn%20f%20packs%20w%20taman"
+      class="btn-whatsapp"
+      target="_blank"
+    >
+      📲 WhatsApp
+    </a>
+  </section>
+
+  <!-- RULES -->
+  <section id="rules">
+    <h2>القواعد والمسؤولية</h2>
+    <p>
+      SPOT كنبيع access و assistance فقط.<br>
+      ما كنبيعوش منتجات وما كنضمنوش النتائج.
+    </p>
+    <ul>
+      <li>Client مسؤول على model / year / version</li>
+      <li>Prices و MOQ كتتبدلو</li>
+      <li>SPOT كيساعد، ما كيضمنش</li>
+      <li>ممنوع مشاركة معلومات suppliers</li>
+    </ul>
+    <p class="english">Access & assistance only. No product guarantee.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>الأسئلة الشائعة</h2>
+
+    <div class="faq-item">
+      <h3>❓ واش SPOT كيشحن؟</h3>
+      <p>❌ لا</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>❓ واش كاين ضمان؟</h3>
+      <p>SPOT كيعطي assistance، ماشي guarantee</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>❓ واش suppliers مختبرين؟</h3>
+      <p>نعم، ولكن التجارة فيها risk</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>❓ واش نقدر نبدأ بكمية صغيرة؟</h3>
+      <p>حسب supplier و pack</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>التواصل</h2>
+    <p>عندك أسئلة؟ باغي تبدا؟ تواصل معنا مباشرة فـ WhatsApp</p>
+
+    <a
+      href="https://wa.me/212660999851?text=Salam%20SPOT%2C%20ana%20bghit%20nbda%20w%20had%20howa%20lmajال%20dyali"
+      class="btn-whatsapp big"
+      target="_blank"
+    >
+      📲 BIG WhatsApp Button
+    </a>
+  </section>
 
 </body>
 </html>
