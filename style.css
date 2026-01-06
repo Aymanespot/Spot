@@ -323,3 +323,110 @@ nav {
     padding: 2.5rem 1.5rem;
   }
 }
+/* =========================
+   MOBILE FIX PACK
+   Paste at END of style.css
+========================= */
+
+/* Make everything breathe on small screens */
+@media (max-width: 768px) {
+
+  /* Navbar: allow wrapping + smaller spacing */
+  .nav-container {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .nav-container ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .nav-container a {
+    font-size: 0.95rem;
+  }
+
+  /* Hero: better height + padding */
+  .hero {
+    min-height: 100vh;
+    padding: 2.2rem 0;
+  }
+
+  /* Switch to 1 column and reduce gaps */
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  /* Headline sizes */
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+  }
+
+  /* Text sizes */
+  .hero-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .english {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* CTA button full width */
+  .btn-whatsapp {
+    width: 100%;
+    text-align: center;
+    padding: 0.95rem 1.2rem;
+  }
+
+  /* Reduce section padding on mobile */
+  .problems,
+  .why-spot,
+  #how-it-works,
+  #packages,
+  #rules,
+  #faq,
+  #contact {
+    margin: 1.2rem auto;
+    padding: 2rem 1.1rem;
+    border-radius: 20px;
+  }
+
+  /* Steps and packages better stacking */
+  .steps {
+    gap: 1.1rem;
+  }
+
+  .step {
+    padding: 1.3rem;
+    border-radius: 18px;
+  }
+
+  #packages .package {
+    width: 100%;
+    margin: 0.6rem 0;
+    padding: 1.4rem;
+    border-radius: 18px;
+  }
+
+  /* WhatsApp floating button: move to right to avoid covering content */
+  .whatsapp-float {
+    left: auto;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 380px) {
+  .hero-content h1 { font-size: 1.75rem; }
+  .hero-content p { font-size: 1rem; }
+}
+
