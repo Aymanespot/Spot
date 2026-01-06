@@ -1,11 +1,13 @@
-/* Global Styles */
+/* =========================
+   GLOBAL
+========================= */
 body {
   direction: rtl;
   font-family: 'Cairo', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  background: #0b0f17;
+  color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -13,49 +15,69 @@ body {
 .english {
   direction: ltr;
   font-family: 'Roboto', sans-serif;
+  opacity: 0.85;
 }
 
-/* Navbar */
+/* =========================
+   NAVBAR (GLASS)
+========================= */
 nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(15, 20, 30, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding: 1rem 0;
 }
 
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+}
+
+.nav-container h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-container a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-container a:hover {
-  color: #ff8c00;
+  color: #ff9f1c;
 }
 
-/* Hero */
+/* =========================
+   HERO
+========================= */
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=2400&q=80') no-repeat center center;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=2400&q=80')
+    no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
 }
 
 .hero-content {
@@ -64,167 +86,30 @@ nav {
   padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  line-height: 1.2;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+  font-size: 1.4rem;
+  margin-bottom: 1.8rem;
+  color: rgba(255,255,255,0.85);
 }
 
-.hero-content .btn-whatsapp {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: linear-gradient(45deg, #ff8c00, #ffa500);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-content .btn-whatsapp:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
-}
-
-/* Sections */
-.problems, .why-spot, #how-it-works, #packages, #rules, #faq, #contact {
-  padding: 5rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.problems, .why-spot, #how-it-works, #packages, #rules, #faq, #contact {
-  background-color: #fff;
-}
-
-.problems, .why-spot, #how-it-works, #packages, #rules, #faq, #contact {
-  margin-bottom: 2rem;
-}
-
-.problems h2, .why-spot h2, #how-it-works h2, #packages h2, #rules h2, #faq h2, #contact h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-.problems p, .why-spot p, #how-it-works p, #packages p, #rules p, #faq p, #contact p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #666;
-}
-
-/* Steps */
-.steps {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.step {
-  flex: 1;
-  min-width: 250px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  padding: 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.step:hover {
-  transform: translateY(-5px);
-}
-
-.step h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.step p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Packages */
-#packages .package {
-  display: inline-block;
-  width: 30%;
-  margin: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  padding: 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-#packages .package:hover {
-  transform: translateY(-5px);
-}
-
-.core, .pro, .premium {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.note {
-  font-size: 0.9rem;
-  color: #999;
-  margin-top: 1rem;
-}
-
-/* FAQ */
-.faq-item {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 18px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  text-align: right;
-}
-
-.faq-item h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.faq-item p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Buttons */
+/* =========================
+   BUTTONS
+========================= */
 .btn-whatsapp {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2.2rem;
   background: linear-gradient(45deg, #ff8c00, #ffa500);
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
@@ -232,16 +117,139 @@ nav {
 }
 
 .btn-whatsapp:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(255, 140, 0, 0.35);
 }
 
 .btn-whatsapp.big {
-  padding: 1rem 2rem;
   font-size: 1.2rem;
 }
 
-/* WhatsApp Float */
+/* =========================
+   GLASS SECTIONS (NO WHITE)
+========================= */
+.problems,
+.why-spot,
+#how-it-works,
+#packages,
+#rules,
+#faq,
+#contact {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 4rem 2.5rem;
+  background: rgba(17, 25, 40, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+/* Titles */
+.problems h2,
+.why-spot h2,
+#how-it-works h2,
+#packages h2,
+#rules h2,
+#faq h2,
+#contact h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+/* Paragraphs */
+.problems p,
+.why-spot p,
+#how-it-works p,
+#packages p,
+#rules p,
+#faq p,
+#contact p {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.85);
+}
+
+/* =========================
+   STEPS
+========================= */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.step {
+  flex: 1;
+  min-width: 260px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+}
+
+.step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* =========================
+   PACKAGES
+========================= */
+#packages .package {
+  display: inline-block;
+  width: 30%;
+  margin: 1rem;
+  padding: 2.2rem;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: transform 0.3s ease;
+}
+
+#packages .package:hover {
+  transform: translateY(-6px);
+}
+
+.note {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* =========================
+   FAQ
+========================= */
+.faq-item {
+  background: rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  text-align: right;
+}
+
+.faq-item p {
+  color: rgba(255,255,255,0.8);
+}
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
 .whatsapp-float {
   position: fixed;
   bottom: 2rem;
@@ -249,7 +257,9 @@ nav {
   z-index: 1000;
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -257,31 +267,24 @@ nav {
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
-  .hero-content p {
-    font-size: 1.2rem;
+  #packages .package {
+    width: 100%;
   }
 
   .steps {
     flex-direction: column;
   }
 
-  .step {
-    min-width: auto;
-  }
-
-  #packages .package {
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  .problems, .why-spot, #how-it-works, #packages, #rules, #faq, #contact {
-    padding: 3rem 1rem;
-  }
-
-  .problems h2, .why-spot h2, #how-it-works h2, #packages h2, #rules h2, #faq h2, #contact h2 {
-    font-size: 2rem;
+  .problems,
+  .why-spot,
+  #how-it-works,
+  #packages,
+  #rules,
+  #faq,
+  #contact {
+    padding: 2.5rem 1.5rem;
   }
 }
