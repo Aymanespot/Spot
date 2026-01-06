@@ -504,4 +504,10 @@ nav ul li, nav ul a{
 p, li, h1, h2, h3{
   unicode-bidi: plaintext !important;
 }
+/* Arabic text: handle mixed Arabic + English safely */
+body, p, li, h1, h2, h3, a {
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+
 
