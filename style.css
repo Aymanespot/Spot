@@ -429,4 +429,32 @@ nav {
   .hero-content h1 { font-size: 1.75rem; }
   .hero-content p { font-size: 1rem; }
 }
+/* ===== FIX RTL/LTR MIXING (VERY IMPORTANT) ===== */
+
+/* Make Arabic default */
+body { direction: rtl; }
+
+/* Any English block must stay LTR and not break punctuation */
+.english{
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
+}
+
+/* Navbar links are English -> keep the menu LTR so it looks normal */
+nav ul{
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  justify-content: center;
+}
+
+/* Make section text look clean on mobile */
+.hero, section{
+  text-align: center;
+}
+
+/* Cards: keep text centered but avoid weird punctuation */
+.problems, .package, .step, .faq-item{
+  unicode-bidi: plaintext;
+}
 
