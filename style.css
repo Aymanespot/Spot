@@ -210,3 +210,38 @@ img, svg, i {
   .hero-content h1 { font-size: 1.8rem; }
   .hero-content p { font-size: 0.95rem; }
 }
+/* ===== FINAL MOBILE OVERFLOW FIX ===== */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+* {
+  max-width: 100% !important;
+}
+
+section, .hero, .hero-content, .nav-container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+ul, ol {
+  padding-inline-start: 0 !important; /* removes weird list padding on mobile */
+  margin: 0 auto !important;
+}
+
+/* FIX the bullets pushing the content */
+.problems ul,
+.why-spot ul,
+#rules ul {
+  list-style-position: inside !important;
+}
+
+/* Make cards not create overflow */
+.step, .package, .faq-item {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
