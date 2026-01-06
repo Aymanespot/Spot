@@ -457,4 +457,51 @@ nav ul{
 .problems, .package, .step, .faq-item{
   unicode-bidi: plaintext;
 }
+/* =========================
+   FIX RTL/LTR + NAV ORDER
+   ========================= */
+
+/* Arabic default */
+html, body{
+  direction: rtl !important;
+  unicode-bidi: plaintext !important;
+}
+
+/* NAV: make menu in correct RTL order */
+nav .nav-container{
+  display:flex !important;
+  flex-direction: column !important;
+  align-items:center !important;
+  gap:10px !important;
+}
+
+nav ul{
+  list-style:none !important;
+  display:flex !important;
+  flex-direction: row-reverse !important; /* THIS is the key */
+  gap:16px !important;
+  padding:0 !important;
+  margin:0 !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
+}
+
+nav ul li, nav ul a{
+  direction: rtl !important;
+  unicode-bidi: isolate !important;
+}
+
+/* English blocks stay LTR */
+.english{
+  direction:ltr !important;
+  unicode-bidi:isolate !important;
+  text-align:center !important;
+}
+
+/* Fix mixed Arabic+English inside normal paragraphs */
+p, li, h1, h2, h3{
+  unicode-bidi: plaintext !important;
+}
 
