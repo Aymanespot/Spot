@@ -1,4 +1,3 @@
-<!-- ar.html (ARABIC / MSA - no Darija) -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -6,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SPOT — الوصول إلى الصين بثقة</title>
 
-  <!-- Your CSS file -->
+  <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
 
   <!-- Fonts -->
@@ -14,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Icons (optional) -->
+  <!-- Font Awesome (optional) -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,13 +21,15 @@
 
   <!-- Floating WhatsApp Button -->
   <a
-    href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أرغب%20في%20معرفة%20كيف%20تعمل%20الخدمة%20وما%20هي%20الباقات%20المتوفرة"
     class="whatsapp-float"
+    href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أرغب%20في%20معرفة%20كيف%20تعمل%20الخدمة%20وما%20هي%20الباقات%20المتوفرة"
     target="_blank"
+    rel="noopener noreferrer"
     aria-label="WhatsApp"
-    rel="noopener"
+    title="WhatsApp"
   >
-    <i class="fab fa-whatsapp"></i>
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span style="font-size:12px;font-weight:700;display:none;">WA</span>
   </a>
 
   <!-- Navigation -->
@@ -42,9 +43,7 @@
         <li><a href="#rules">الشروط</a></li>
         <li><a href="#faq">الأسئلة</a></li>
         <li><a href="#contact">التواصل</a></li>
-
-        <!-- Language switch -->
-        <li><a href="./index.html">English</a></li>
+        <li><a href="./index.html" dir="ltr">English</a></li>
       </ul>
     </div>
   </nav>
@@ -53,7 +52,6 @@
   <section id="home" class="hero">
     <div class="hero-content">
 
-      <!-- Left: main headline + CTA -->
       <div>
         <h1>SPOT — الوصول إلى الصين بثقة</h1>
 
@@ -62,28 +60,30 @@
           بطريقة منظمة وشفافة — بدون وسطاء — مع دعم ومساعدة حقيقية.
         </p>
 
+        <!-- Optional English line (keep or remove) -->
         <p class="english">
           Verified China supplier access & assistance.<br>
           Access, not products. Assistance, not promises.
         </p>
 
         <a
-          href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أرغب%20في%20معرفة%20كيف%20تعمل%20الخدمة%20وما%20هي%20الباقات%20المتوفرة"
           class="btn-whatsapp"
+          href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أرغب%20في%20معرفة%20كيف%20تعمل%20الخدمة%20وما%20هي%20الباقات%20المتوفرة"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           📲 تواصل معنا عبر واتساب
         </a>
 
         <!-- Quick contact -->
-        <p class="english" style="margin-top:12px;">
-          Instagram: <b>@aymanespot</b> &nbsp;|&nbsp;
-          Email: <b>aymane.chergui.aymanox@gmail.com</b>
+        <p class="english">
+          Instagram: <b><a href="https://instagram.com/aymanespot" target="_blank" rel="noopener noreferrer">@aymanespot</a></b>
+          &nbsp;|&nbsp;
+          Email: <b><a href="mailto:aymane.chergui.aymanox@gmail.com">aymane.chergui.aymanox@gmail.com</a></b>
         </p>
       </div>
 
-      <!-- Right: focus card -->
+      <!-- Focus card -->
       <div class="problems">
         <h2>التركيز الحالي</h2>
         <p>
@@ -107,7 +107,7 @@
     </div>
   </section>
 
-  <!-- WHY / PROBLEMS -->
+  <!-- WHY -->
   <section class="why-spot">
     <h2>الكثير من التجار يخسرون المال بسبب:</h2>
     <ul>
@@ -190,10 +190,10 @@
     <p class="note">الأسعار تعتمد على الباقة والتوفر.</p>
 
     <a
-      href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أريد%20معرفة%20محتوى%20الباقات%20والأسعار"
       class="btn-whatsapp"
+      href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أريد%20معرفة%20محتوى%20الباقات%20والأسعار"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       📲 واتساب
     </a>
@@ -246,16 +246,16 @@
     <p>لديك أسئلة؟ تريد البدء؟ تواصل معنا مباشرة:</p>
 
     <a
-      href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أريد%20البدء%20وهذا%20هو%20المجال%20الذي%20أعمل%20به%3A"
       class="btn-whatsapp big"
+      href="https://wa.me/212660999851?text=مرحباً%20SPOT%2C%20أريد%20البدء%20وهذا%20هو%20المجال%20الذي%20أعمل%20به%3A"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       📲 زر واتساب الرئيسي
     </a>
 
-    <p class="english" style="margin-top:12px;">
-      Instagram: <b><a href="https://instagram.com/aymanespot" target="_blank" rel="noopener">@aymanespot</a></b><br>
+    <p class="english">
+      Instagram: <b><a href="https://instagram.com/aymanespot" target="_blank" rel="noopener noreferrer">@aymanespot</a></b><br>
       Email: <b><a href="mailto:aymane.chergui.aymanox@gmail.com">aymane.chergui.aymanox@gmail.com</a></b>
     </p>
   </section>
